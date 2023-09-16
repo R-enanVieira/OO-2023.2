@@ -1,0 +1,93 @@
+class Ponto(x, y) {
+  privado x, y;
+
+  publico Ponto(x, y) {
+    este.x = x;
+    este.y = y;
+  }
+  
+  quadrante(x, y) {
+    se x igual y
+      retorne imprime("Primeiro quadrante");
+    senao se x é menor que 0 e y é positivo
+      retorne imprime("Segundo quadrante");
+    senao se x é menor que 0 e y é menor que 0
+      retorne imprime("Terceiro quadrante");
+    senao se x é positivo e y é menor que 0
+      retorne imprime("Quarto quadrante");
+  }
+} 
+
+class Triangulo_retangulo() {
+  privado c_adjacente;
+  privado c_oposto;
+  privado hipotenusa;
+  privado altura;
+  
+  publico Triangulo_retangulo(c_adjacente, c_oposto, hipotenusa, altura) {
+    este.c_adjacente = c_adjacente;
+    este.c_oposto = c_oposto;
+    este.hipotenusa = hipotenusa;
+    este.altura = altura;
+  } 
+  
+  area(hipotenusa, altura) {
+    retorne hipotenusa*altura/2;
+  }
+} 
+
+class Retangulo() {
+  privado base;
+  privado altura;
+
+  publico Retangulo(base, altura) {
+    este.base = base;
+    este.altura = altura;
+  }
+
+  area(base, altura) {
+    retorne base*altura;
+  }
+
+  perimetro(base, altura) {
+    retorne 2*base + 2*altura;
+  }
+
+}
+
+class Circulo() {
+  privado raio;
+  constante pi = 3.1415926;
+
+  publico(raio) {
+    este.raio = raio;
+  }
+
+  circunferencia(raio, pi) {
+    retorne 2*pi*r;
+  }
+
+  area(raio, pi) {
+    retorne pi*r*r;
+  }
+
+  diametro(raio) {
+    retorne 2*raio;
+  }
+}
+
+class Trapezio() {
+  privado base1;
+  privado base2;
+  privado altura;
+  
+  publico Trapezio(base1, base2, altura) {
+    este.base1 = base1;
+    este.base2 = base2;
+    este.altura = altura;
+  }
+
+  area(base1, base2, altura) {
+    retorne (base1+base2)/altura;  
+  }
+}
